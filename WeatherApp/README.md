@@ -9,6 +9,10 @@
 * Volly
 * Open Weather API (https://openweathermap.org/)
 
+## Coverd area
+* dynimically add values to spinner (drop down list)
+* volly request handling
+
 ## Code
 
 #### set array adapter  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
