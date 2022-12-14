@@ -1,17 +1,21 @@
 # Weather App with Volly
+<br><br>
 
 ## How to Use
 * first pull this project
 * open in android studio and build it
 * replace the api key with your own key ([MainActivity.kt](./app/src/main/java/com/example/weatherapp/MainActivity.kt) file line 48)
+<br>
 
 ## Used
 * Volly
 * Open Weather API (https://openweathermap.org/)
+<br>
 
 ## Coverd area
 * dynimically add values to spinner (drop down list)
 * volly request handling
+<br>
 
 ## Code
 
@@ -65,4 +69,8 @@ var request = JsonObjectRequest(
 ```kotlin
 Volley.newRequestQueue(applicationContext).add(request) 
 ```
+<br><br>
+
+## Additional Dependancies
+> ` implementation("com.android.volley:volley:1.2.1") `
 
