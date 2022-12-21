@@ -19,7 +19,7 @@
 
 ## Code
 
-#### set array adapter  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+#### :point_right: set array adapter  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
 ```kotlin
 val spn_city = findViewById<Spinner>(R.id.spn_city)
 var city = ArrayList<Any>()
@@ -32,7 +32,7 @@ spn_city.adapter = adapter
 ```
 * `spn_city is the id of spinner`
 
-#### function of the spinner  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+#### :point_right: function of the spinner  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
 ```kotlin
 var selected_city = if(spn_city.selectedItem == "Colombo") "colombo"
 else if(spn_city.selectedItem == "Washington") "washington"
@@ -42,7 +42,7 @@ else "colombo"
 getWeatherData(selected_city)
 ```
 
-#### make Volley Request  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+#### :point_right: make Volley Request  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
 ```kotlin
 var request = JsonObjectRequest(
     com.android.volley.Request.Method.GET,
@@ -65,7 +65,7 @@ var request = JsonObjectRequest(
 )
 ```
 
-#### send Volly Request  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+#### :point_right: send Volly Request  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
 ```kotlin
 Volley.newRequestQueue(applicationContext).add(request) 
 ```
