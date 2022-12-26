@@ -1,5 +1,5 @@
 # Weather App with Volly
-<br><br>
+<br>
 
 ## How to Use
 * first pull this project
