@@ -21,27 +21,27 @@
 
 ## Additional Dependancies
 
-```kotlin
-implementation('com.journeyapps:zxing-android-embedded:4.3.0') { transitive = false }
-implementation 'com.google.zxing:core:3.3.0'
-```
+>```kotlin
+>implementation('com.journeyapps:zxing-android-embedded:4.3.0') { transitive = false }
+>implementation 'com.google.zxing:core:3.3.0'
+>```
 <br>
 
 ## Code
 
-#### :point_right: declare compounents  [`>>`]()
+#### :point_right: declare compounents  [`>>`](./app/src/main/java/com/example/qrcodeapp/MainActivity.kt)
 ```kotlin
 ivQRcode = findViewById(R.id.ivQRCode)
 etData = findViewById(R.id.etData)
 btnGenerate = findViewById(R.id.btn_generator)
 ```
 
-#### :point_right: get the data  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+#### :point_right: get the data  [`>>`](./app/src/main/java/com/example/qrcodeapp/MainActivity.kt)
 ```kotlin
 val data = etData.text.toString().trim()
 ```
 
-#### :point_right: generate QR code [`>>`]()
+#### :point_right: generate QR code [`>>`](./app/src/main/java/com/example/qrcodeapp/MainActivity.kt)
 ```kotlin
 val bitMatrix = writer.encode(data, BarcodeFormat.QR_CODE, 512, 512)
 val width = bitMatrix.width
@@ -54,7 +54,7 @@ for(x in 0 until height) {
 }
 ```
 
-#### :point_right: show QR code [`>>`]()
+#### :point_right: show QR code [`>>`](./app/src/main/java/com/example/qrcodeapp/MainActivity.kt)
 ```kotlin
 ivQRcode.setImageBitmap(bmp)
 ```
