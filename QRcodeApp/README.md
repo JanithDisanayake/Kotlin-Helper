@@ -19,4 +19,10 @@
 * Show in Image View
 <br>
 
-##
+## Code
+
+#### :point_right: get the data  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
+```kotlin
+val data = etData.text.toString().trim()
+```
+
