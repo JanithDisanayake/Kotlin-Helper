@@ -17,6 +17,10 @@
 * volly request handling
 <br>
 
+## Additional Dependancies
+> ` implementation("com.android.volley:volley:1.2.1") `
+<br>
+
 ## Code
 
 #### :point_right: set array adapter  [`>>`](./app/src/main/java/com/example/weatherapp/MainActivity.kt)
@@ -69,8 +73,4 @@ var request = JsonObjectRequest(
 ```kotlin
 Volley.newRequestQueue(applicationContext).add(request) 
 ```
-<br><br>
-
-## Additional Dependancies
-> ` implementation("com.android.volley:volley:1.2.1") `
 
