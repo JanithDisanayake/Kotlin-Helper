@@ -15,3 +15,8 @@
 ## Coverd area
 * Google maps getting current location
 <br>
+
+## Permissions
+>```xml
+><uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+>```
