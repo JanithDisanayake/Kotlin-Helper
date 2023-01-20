@@ -15,9 +15,3 @@
 ## Coverd area
 * Google maps getting current location
 <br>
-
-## Additional Dependancies
-> ```kotlin
->  implementation("com.android.volley:volley:1.2.1") 
->  ```
-<br>
