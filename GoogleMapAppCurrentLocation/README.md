@@ -4,7 +4,7 @@
 ## How to Use
 * first pull this project
 * open in android studio and build it
-* add your own google api key
+* add your own google api key ([MainActivity.kt](./app/src/main/AndroidManifest.xml) file line 30)
 * run using your emulator or phone
 <br>
 
