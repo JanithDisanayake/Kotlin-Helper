@@ -4,10 +4,12 @@
 </div>
 <br>
 
+<div align=center>
+  <img align=center src="https://github.com/Janith3003/Janith3003/blob/main/Images/bitch.gif" style="width:250px; height=250px"/>
+</div>
 
 ## Content
 
   |---> [`Google Map App`](/GoogleMapAppCurrentLocation) - get a current location <br>
   |---> [`Weather App`](/WeatherApp) - get weather <br>
   |---> [`QR Code App`](/QRcodeApp) - Generate QR code 
-  
