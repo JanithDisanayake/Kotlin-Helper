@@ -4,9 +4,9 @@
 </div>
 <br>
 
-<div align=center>
+ <!-- <div align=center>
   <img align=center src="https://github.com/Janith3003/Janith3003/blob/main/Images/bitch.gif" style="width:250px; height=250px"/>
-</div>
+</div> -->
 
 ## Content
 
