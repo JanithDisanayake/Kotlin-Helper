@@ -4,7 +4,7 @@
 ## How to Use
 * first pull this project
 * open in android studio and build it
-*  get your own google api key ([reference](./app/src/main/java/com/example/googlemapapp_currentlocation/MapsActivity.kt))
+*  get your own google api key ([reference](https://support.google.com/googleapi/answer/6158862?hl=en))
 * add your  google api key ([MainActivity.kt](./app/src/main/AndroidManifest.xml) file line 30)
 * run using your emulator or phone
 <br>
