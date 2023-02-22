@@ -53,6 +53,10 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         return students
     }
 
+    /**
+     *  this method is used to
+     *  update data in the Student Table
+     */
     fun updateData(id :Int, field :String, value :String) : Boolean
     {
         try {
@@ -66,6 +70,10 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         return true
     }
 
+    /**
+     *  this funtion is use to
+     *  delete data from the Student Table
+     */
     fun deleteData(ids:Array<String>) : Boolean
     {
         val database = this.writableDatabase
