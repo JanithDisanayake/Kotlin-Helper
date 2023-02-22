@@ -10,11 +10,6 @@
 
 ## Content
 
-  |---> [`Google Map App`](/GoogleMapAppCurrentLocation) - get a current location <br>
-  |---> [`Weather App`](/WeatherApp) - get weather <br>
-  |---> [`QR Code App`](/QRcodeApp) - Generate QR code <br>
-  |---> [`SQLite App`](/SQLiteApp) - Handle SQLite database
-
 <table>
   <tr>
     <th> <a href="/GoogleMapAppCurrentLocation"> Google Map App </a> </th>
