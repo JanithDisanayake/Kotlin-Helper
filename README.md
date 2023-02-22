@@ -12,4 +12,5 @@
 
   |---> [`Google Map App`](/GoogleMapAppCurrentLocation) - get a current location <br>
   |---> [`Weather App`](/WeatherApp) - get weather <br>
-  |---> [`QR Code App`](/QRcodeApp) - Generate QR code 
+  |---> [`QR Code App`](/QRcodeApp) - Generate QR code <br>
+  |---> [`SQLite App`](/SQLiteApp) - Handle SQLite database
