@@ -83,6 +83,11 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         return status
     }
 
+    /**
+     *  this method is used to
+     *  execute any query
+     *  that use to modify data in Student Table
+     */
     fun executeQuery(sql:String) : Boolean {
         try {
             val database = this.writableDatabase
