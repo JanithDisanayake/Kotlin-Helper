@@ -2,10 +2,8 @@ package com.example.sqliteapp
 
 import android.content.ContentValues
 import android.content.Context
-import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
-import android.util.Log
 
 class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 1){
 
@@ -60,6 +58,15 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         return true
     }
 
+    fun deleteData(ids:Array<String>) : Boolean
+    {
+        val database = this.writableDatabase
+        var status :Boolean = false
+        if(database.delete("Student", "ST_ID=?", ids) == 1)
+            status = true
+        return status
+    }
+
     fun executeQuery(sql:String) : Boolean {
         try {
             val database = this.writableDatabase
@@ -71,7 +78,7 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         }
         return true
     }
-    
+
     override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
         TODO("Not yet implemented")
     }
