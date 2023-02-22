@@ -1,7 +1,7 @@
 package com.example.sqliteapp
 
 data class Student(
-    val id : String ?= null,
-    val name : String ?= null,
-    val addr : String ?= null
+    var id : Int ?= null,
+    var name : String ?= null,
+    var addr : String ?= null
 )

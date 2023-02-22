@@ -11,7 +11,7 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
 
     override fun onCreate(db: SQLiteDatabase?)
     {
-        val student = "CREATE TABLE Student(ST_ID int PRIMARY KEY AUTOINCREMENT, NAME TEXT DEFAULT '', ADDRESS TEXT DEFAULT '')"
+        val student = "CREATE TABLE Student(ST_ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT DEFAULT '', ADDRESS TEXT DEFAULT '')"
         db?.execSQL(student)
     }
 
@@ -30,11 +30,15 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         val db = this.writableDatabase
         val query = "SELECT * FROM Student"
         val students = ArrayList<Student>()
-        val result = db.rawQuery(query, null)
+        var result = db.rawQuery(query, null)
 
         if (result.moveToFirst()) {
             do {
-                Log.w("Students: ", result!!.toString())
+                var student = Student()
+                student.id = result.getInt(0)
+                student.name = result.getString(1)
+                student.addr = result.getString(2)
+                students.add(student)
             }
             while (result.moveToNext())
         }
@@ -42,8 +46,18 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         db.close()
         return students
     }
-    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
-        TODO("Not yet implemented")
+
+    fun updateData(id :Int, field :String, value :String) : Boolean
+    {
+        try {
+            val database = this.writableDatabase
+            database.execSQL("UPDATE Student SET $field = '$value' WHERE ST_ID = $id")
+        }
+        catch (e: java.lang.Exception) {
+            e.printStackTrace()
+            return false
+        }
+        return true
     }
 
     fun executeQuery(sql:String) : Boolean {
@@ -57,5 +71,8 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         }
         return true
     }
-
+    
+    override fun onUpgrade(p0: SQLiteDatabase?, p1: Int, p2: Int) {
+        TODO("Not yet implemented")
+    }
 }
