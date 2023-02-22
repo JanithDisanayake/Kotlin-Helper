@@ -13,6 +13,10 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         db?.execSQL(student)
     }
 
+    /**
+     *  this method is used to
+     *  insert data into Student Table
+     */
     fun insertData(name :String, address :String)
     {
         val db = this.writableDatabase
@@ -23,6 +27,10 @@ class Database(val context: Context) :  SQLiteOpenHelper(context, "NIBM", null, 
         db.insert("Student", null, cv)
     }
 
+    /**
+     *  this method is used to
+     *  read data from Student Table
+     */
     fun readData() : ArrayList<Student>
     {
         val db = this.writableDatabase
